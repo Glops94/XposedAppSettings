@@ -2,47 +2,67 @@
 <resources>
     <string name="app_name">App Settings</string>
     <string name="app_mod_summary">La possibilité de définir certains paramètres de base pour chaque application.</string>
+
+
+
+
+
+    <!-- Main screen -->
     <string name="app_loading">"Chargement des applis
-Patientez SVP..."</string>
+\nPatientez SVP..."</string>
     <string name="app_searchhint">Nom ou Paquet</string>
     <string name="app_about">Module <a href="http://forum.xda-developers.com/showthread.php?t=1574401">Xposed</a> par <a href="http://forum.xda-developers.com/member.php?u=4419114">rovo89</a> &amp; <a href="http://forum.xda-developers.com/member.php?u=4322181">Tungstwenty</a>". 
-Vous pouvez utiliser "<a href="http://forum.xda-developers.com/showthread.php?t=2437377">ce sujet</a> pour des questions ou suggestions.</string>
-    <string name="app_description">"Ce module vous permet de modifier certains paramètres de base pour chaque application sans avoir à modifier l'APK: 
-- Taille de l'écran (DPI)
-- Taille de police
-- Falsifier la taille de l'écran pour les ressources de chargement
-- Langue
-- Mode plein écran
-- Masquer la barre de statut
-- Garder l'écran allumé pendant que l'application est visible 
-- Afficher l'application sur l'écran de verrouillage
-- Garder toujours en mémoire (RAM)
-- Forcer l'orientation (Portrait/Paysage/Auto)
-- Notifications persistantes (sonne en boucle)
-- Désactiver les notifications étendu
-- Annuler les permissions"</string>
+\nVous pouvez utiliser "<a href="http://forum.xda-developers.com/showthread.php?t=2437377">ce sujet</a> pour des questions ou suggestions.</string>
+    <string name="app_description">Ce module vous permet de modifier certains paramètres de base pour chaque application sans avoir à modifier l\'APK: 
+\n- Taille de l\'écran (DPI)
+\n- Taille de police
+\n- Falsifier la taille de l\'écran pour charger les ressources
+\n- Locale (Langue)
+\n- Mode plein écran
+\n- Masquer la barre de statut
+\n- Garder l\'écran allumé pendant que l\'application est visible 
+\n- Afficher l\'application sur écran de déverrouillage
+\n- Garder toujours en mémoire (RAM)
+\n- disable fullscreen keyboard input
+\n- Forcer l\'orientation (Portrait/Paysage/Auto)
+\n- Notifications persistantes (sonne en boucle)
+\n- Désactiver les notifications étendu
+\n- Annuler les permissions</string>
     <string name="app_version">Version: %s</string>
     <string name="app_translation">Traducteur: %s</string>
-    <string name="app_notactive_warning">Note: Bien que les panneaux de configuration peuvent être utilisés tels quels, ils ne toucheront que les applications si Xposed framework est installé et si ce module est activé dans la configuration !</string>
+    <string name="app_notactive_warning">Note: Bien que les panneaux de configuration peuvent être utilisés tels quels, 
+ils ne toucheront que les applications si Xposed framework est installé 
+et si ce module est activé dans la configuration!</string>
+
+
+    <!-- main menu -->
     <string name="menu_export">Exporter</string>
     <string name="menu_import">Importer</string>
     <string name="menu_about">À propos</string>
-    <string name="imp_exp_file_doesnt_exist">"Le fichier n'existe pas: %s"</string>
-    <string name="imp_exp_confirm">"Remplacer tous les paramètres avec ceux qui sont sur ​​le point d'être importés ?"</string>
+ 
+    <!-- Import / Export -->
+    <string name="imp_exp_file_doesnt_exist">Le fichier n\'existe pas: %s</string>
+    <string name="imp_exp_confirm">Remplacer tous les paramètres avec ceux qui sont sur le point d\'être importés?</string>
     <string name="imp_exp_exported">Paramètres exportées vers un fichier: %s</string>
-    <string name="imp_exp_export_error">"Échec de l'exportation: %s"</string>
-    <string name="imp_exp_import_error">"Échec de l'importation: %s"</string>
+    <string name="imp_exp_export_error">Échec de l\'exportation: %s</string>
+    <string name="imp_exp_import_error">Échec de l\'importation: %s</string>
     <string name="imp_exp_invalid_import_file">Fichier à importer non valide ou vide: %s</string>
-    <string name="imp_exp_imported">Importation réussie, les paramètres remplacés</string>
+    <string name="imp_exp_imported">Importation réussie; les paramètres remplacés</string>
+   
+   
+   <!-- app-specific menu -->
     <string name="menu_save">Sauver</string>
     <string name="menu_launch">Lancer</string>
     <string name="menu_settings">Paramètres</string>
     <string name="menu_playstore">Google Play</string>
+
+    
+    <!-- Settings screen -->
     <string name="settings_title">Paramètres</string>
     <string name="settings_dpi">DPI</string>
     <string name="settings_fontscale">Taille de police</string>
     <string name="settings_listres">Liste res.</string>
-    <string name="settings_screen">Écan (dp)</string>
+    <string name="settings_screen">Écran (dp)</string>
     <string name="settings_xlargeres">xlarge res.</string>
     <string name="settings_locale">Langue</string>
     <string name="settings_fullscreen">Plein écran</string>
@@ -50,33 +70,45 @@ Vous pouvez utiliser "<a href="http://forum.xda-developers.com/showthread.php?t=
     <string name="settings_screenon">Écran reste allumé</string>
     <string name="settings_showwhenlocked">Affi.en déverrouillage</string>
     <string name="settings_resident">Garder tjrs en mémoire (RAM)</string>
+    <string name="settings_nofullscreenime">No Fullscreen IME</string>
     <string name="settings_orientation">Orientation</string>
     <string name="settings_insistentnotif">Notif. persistante</string>
     <string name="settings_nobignotif">Pas de notif. étendu</string>
     <string name="settings_permissions">Permissions</string>
+ 
     <string name="settings_default">(Par défaut)</string>
+ 
     <string name="settings_force">Forcer</string>
     <string name="settings_prevent">Empêcher</string>
     <string name="settings_immersive">Immersive</string>
+ 
     <string name="settings_ori_normal">Rotation normal</string>
     <string name="settings_ori_portrait">Toujours en mode portrait</string>
     <string name="settings_ori_landscape">Toujours en mode paysage</string>
     <string name="settings_ori_forceauto">Forcer la rotation automatique</string>
+
+    <!-- List resources -->
     <string name="res_title">Resources</string>
     <string name="res_noentries">Aucune ressource trouvée</string>
-    <string name="res_failedtoload">"Impossible de charger le contenu d'APK"</string>
+    <string name="res_failedtoload">Impossible de charger le contenu d\'APK</string>
+ 
+    <!-- Show / search / revoke permissions -->
     <string name="perms_title">Permissions</string>
     <string name="perms_revoke">Annuler les permissions</string>
-    <string name="perms_shared_warning">"ATTENTION:
-Paquet partagé !"</string>
+    <string name="perms_shared_warning">ATTENTION: Paquet partagé!</string>
     <string name="perms_searchhint">Nom ou description</string>
     <string name="perms_nodescription">(Aucune description fournie)</string>
     <string name="perms_filter_title">Sélectionner une permission pour filtrer</string>
+
+    <!-- Saving settings -->
     <string name="settings_unsaved_title">Attention</string>
-    <string name="settings_unsaved_detail">"Vous n'avez pas enregistrer les modifications.
-Voulez-vous vraiment revenir en arrière et annuler les modifications ?"</string>
+    <string name="settings_unsaved_detail">Vous n\'avez pas enregistrer les modifications.
+Voulez-vous vraiment revenir en arrière et annuler les modifications?</string>
     <string name="settings_apply_title">Appliquer les paramètres</string>
-    <string name="settings_apply_detail">"Arrêter aussi l'application si elle est relancé et appliquer les nouveaux paramètres ?"</string>
+    <string name="settings_apply_detail">"Arrêter aussi l\'application si elle est relancé et appliquer les nouveaux paramètres?"</string>
+ 
+ 
+    <!-- Filter dialog -->
     <string name="filter_title">Filtre</string>
     <string name="filter_all">Tout</string>
     <string name="filter_overridden">Substitution</string>
@@ -91,5 +123,7 @@ Voulez-vous vraiment revenir en arrière et annuler les modifications ?"</string
     <string name="filter_cancel">Annuler</string>
     <string name="filter_clear">Effacer</string>
     <string name="filter_apply">Appliquer</string>
+    
+    
     <string name="translator">Glops94</string>
 </resources>
